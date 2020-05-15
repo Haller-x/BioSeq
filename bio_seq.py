@@ -1,4 +1,3 @@
-####DNA COMPLEMENTAR###
 from Bio import SeqIO
 from Bio import pairwise2
 from Bio.Seq import Seq
@@ -10,12 +9,7 @@ import tkinter as tk
 import pyperclip
 from tkinter import ttk
 from dict_values import *
-'''
-alterações a serem feitas:
-Limpar campos antes  
-PERMITIR SALVAR ALINHAMENTOS EM ARQUIVO E/OU GERAR AVISO COM O SCORE
 
-'''
 root= tk.Tk()
 root.title('BioSeq Tool - by Haller-x (GLA7)')
 canvas1 = tk.Canvas(root, width = 600, height = 600,  relief = 'raised')
@@ -50,7 +44,7 @@ label_seq_aa = tk.Label(root, text='Seq AA:')
 label_seq_aa.config(font=('helvetica', 11))
 canvas1.create_window(200, 260, window=label_seq_aa)
 
-####need to change it
+####
 label__ = tk.Label(root, text='_______________________________________________________________________________________________________________')###
 label__.config(font=('helvetica', 12))
 canvas1.create_window(100, 300, window=label__)
