@@ -1,4 +1,3 @@
-####DNA COMPLEMENTAR###
 from Bio import SeqIO
 from Bio import pairwise2
 from Bio.Seq import Seq
@@ -45,7 +44,7 @@ label_seq_aa = tk.Label(root, text='Seq AA:')
 label_seq_aa.config(font=('helvetica', 11))
 canvas1.create_window(200, 260, window=label_seq_aa)
 
-####need to change it
+####
 label__ = tk.Label(root, text='_______________________________________________________________________________________________________________')###
 label__.config(font=('helvetica', 12))
 canvas1.create_window(100, 300, window=label__)
