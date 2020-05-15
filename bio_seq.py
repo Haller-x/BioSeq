@@ -235,6 +235,26 @@ def pairwise_seq():
                 mismatch_pesos= entry_mismatch_weight_pairwise.get()
                 gap_abertura= entry_gap_open.get()
                 gap_extensao= entry_gap_extend.get()
+                print(match_pesos)
+                print(type(match_pesos))
+                if match_pesos == '':
+                        match_pesos =5
+                        print(match_pesos)
+                        print(type(match_pesos))
+                else:
+                        match_pesos= int(entry_match_weight_pairwise.get())
+                if mismatch_pesos == '':
+                        mismatch_pesos = -4
+                else:
+                        mismatch_pesos= int(entry_mismatch_weight_pairwise.get())
+                if gap_abertura == '':
+                        gap_abertura = -2
+                else:
+                        gap_abertura= int(entry_gap_open.get())
+                if gap_extensao =='':
+                        gap_extensao=-0.5
+                else:
+                        gap_extensao= float(entry_gap_extend.get())
                 align= pairwise2.align.globalms(seq1,seq2,match_pesos,mismatch_pesos,gap_abertura,gap_extensao)
                 save_pairwise = tk.Tk()
                 save_pairwise.withdraw()
@@ -331,6 +351,9 @@ canvas1.create_window(530,460, window=button_run_matrix_alignment)
 
 button_clear_matrix_alignment = tk.Button(text='Clear fields', command=clear_matrix_default, bg = 'green', fg='white', font=('helvedica',9,'bold'))
 canvas1.create_window(470,460, window=button_clear_matrix_alignment)
+
+button_exit = tk.Button(text='Exit!', command=exit, bg = 'Blue', fg='white', font=('helvedica',9,'bold'))
+canvas1.create_window(530,550, window=button_exit)
 
 
 
