@@ -10,12 +10,7 @@ import tkinter as tk
 import pyperclip
 from tkinter import ttk
 from dict_values import *
-'''
-alterações a serem feitas:
-Limpar campos antes  
-PERMITIR SALVAR ALINHAMENTOS EM ARQUIVO E/OU GERAR AVISO COM O SCORE
 
-'''
 root= tk.Tk()
 root.title('BioSeq Tool - by Haller-x (GLA7)')
 canvas1 = tk.Canvas(root, width = 600, height = 600,  relief = 'raised')
